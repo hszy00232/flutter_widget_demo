@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget_demo/page/ExpanedPage.dart';
 import 'package:flutter_widget_demo/page/TabBarPage.dart';
 
 void main() => runApp(MyApp());
@@ -82,11 +83,15 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 List<String> widgets = [
-  '第14节 -- 文本框',
+  '第1节 -- TabBar',
+  '第2节 -- Expaned',
 ];
 
 Map<String, WidgetBuilder> routers = {
   "page0": (context) {
     return TabBarPage();
   },
+  "page1": (context) {
+    return ExpandedPage();
+  }
 };
