@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_demo/expaned/ExpanedColumnWidget.dart';
+import 'package:flutter_widget_demo/expaned/ExpanedRowWidget.dart';
 
 class ExpandedPage extends StatelessWidget {
   @override
@@ -20,6 +21,19 @@ class ExpandedPage extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => ExpanedColumnWidget(),
+                ),
+              );
+            },
+          ),
+          GestureDetector(
+            child: ListTile(
+              title: Text('水平方向'),
+            ),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ExpandedRowWidget(),
                 ),
               );
             },

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget_demo/page/AlignPage.dart';
 import 'package:flutter_widget_demo/page/ExpanedPage.dart';
+import 'package:flutter_widget_demo/page/RowPage.dart';
 import 'package:flutter_widget_demo/page/TabBarPage.dart';
+import 'package:flutter_widget_demo/page/TextFiledPage.dart';
 
 void main() => runApp(MyApp());
 
@@ -85,6 +88,9 @@ class _MyHomePageState extends State<MyHomePage> {
 List<String> widgets = [
   '第1节 -- TabBar',
   '第2节 -- Expaned',
+  '第3节 -- Row',
+  '第4节 -- 容器类',
+  '第5节 -- 文本'
 ];
 
 Map<String, WidgetBuilder> routers = {
@@ -93,5 +99,14 @@ Map<String, WidgetBuilder> routers = {
   },
   "page1": (context) {
     return ExpandedPage();
+  },
+  "page2": (context) {
+    return RowPage();
+  },
+  "page3": (context) {
+    return AlignPage();
+  },
+  "page4": (context) {
+    return TextFiledPage();
   }
 };
