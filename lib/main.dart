@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_demo/page/AlignPage.dart';
+import 'package:flutter_widget_demo/page/CustomScrollViewPage.dart';
 import 'package:flutter_widget_demo/page/ExpanedPage.dart';
 import 'package:flutter_widget_demo/page/RowPage.dart';
 import 'package:flutter_widget_demo/page/TabBarPage.dart';
@@ -90,7 +91,8 @@ List<String> widgets = [
   '第2节 -- Expaned',
   '第3节 -- Row',
   '第4节 -- 容器类',
-  '第5节 -- 文本'
+  '第5节 -- 文本',
+  '第6节 -- CustomScrollView',
 ];
 
 Map<String, WidgetBuilder> routers = {
@@ -108,5 +110,8 @@ Map<String, WidgetBuilder> routers = {
   },
   "page4": (context) {
     return TextFiledPage();
+  },
+  "page5": (context) {
+    return CustomScrollViewPage();
   }
 };
